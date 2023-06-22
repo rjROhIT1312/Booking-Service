@@ -24,6 +24,7 @@ const get = async(req,res)=>{
   }
 }
 
+
 // const update = async (req, res) => {
 //     try {
 //       const updateField = await seatModel.updateMany({},{$set:{is_booked:false}},{new:true})
