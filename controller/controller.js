@@ -24,15 +24,15 @@ const get = async(req,res)=>{
   }
 }
 
-const update = async (req, res) => {
-    try {
-      const updateField = await seatModel.updateMany({},{$set:{is_booked:false}},{new:true})
-      return res.status(200).send({ status: true, data: updateField });
-    } catch (error) {
+// const update = async (req, res) => {
+//     try {
+//       const updateField = await seatModel.updateMany({},{$set:{is_booked:false}},{new:true})
+//       return res.status(200).send({ status: true, data: updateField });
+//     } catch (error) {
       
-      return res.status(500).send({ status: false, error: error.message });
-    }
-  };
+//       return res.status(500).send({ status: false, error: error.message });
+//     }
+//   };
 
 
   const getSeatPricing = async (req, res) => {

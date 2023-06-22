@@ -4,7 +4,7 @@ const controller = require('../controller/controller')
 
 
 router.get('/seats',controller.get)
-router.put('/update',controller.update)
+// router.put('/update',controller.update)
 router.get('/seats/:id',controller.getSeatPricing)
 router.post('/booking',controller.createBooking)
 router.get('/bookings',controller.bookings)
